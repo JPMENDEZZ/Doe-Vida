@@ -1,10 +1,12 @@
 const menu = document.querySelector('.menu');
 const NavMenu = document.querySelector('.nav-menu');
 
-menu.addEventListener('click', () => {
+NavMenu.addEventListener('click', animarMenu)
+
+function animarMenu() {
     menu.classList.toggle('ativo');
     NavMenu.classList.toggle('ativo');
-})
+}
 
 const btn = document.getElementById("btn-topo")
 
